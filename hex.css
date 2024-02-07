@@ -6,7 +6,7 @@
 
 .hex_bag {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  background-color: var(--lysgron);
+  background-color: var(--light_green);
   width: 100%;
   padding: 5%;
 }
@@ -15,54 +15,59 @@
   position: relative;
 }
 
-.hex_1 {
-  background-color: var(--lysgron);
+.hex_green_small {
+  background-color: var(--light_green);
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
-  padding: 3rem;
 }
-.hex_2 {
+.hex_green_medium {
+  background-color: var(--light_green);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  aspect-ratio: 1/1;
+  width: 20%;
+}
+.hex_green_large {
+  background-color: var(--light_green);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  aspect-ratio: 1/1;
+  width: 20%;
+}
+.hex_blue_small {
   background-color: var(--lysblaa);
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
-  padding: 3rem;
 }
-.hex_3 {
-  background-color: var(--lysgron);
-  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  aspect-ratio: 1/1;
-  width: 20%;
-  padding: 3rem;
-}
-.hex_4 {
+.hex_blue_medium {
   background-color: var(--lysblaa);
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
-  padding: 3rem;
 }
-.hex_5 {
-  background-color: var(--lysgron);
-  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  aspect-ratio: 1/1;
-  width: 20%;
-  padding: 3rem;
-}
-.hex_6 {
+.hex_blue_large {
   background-color: var(--lysblaa);
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
-  padding: 3rem;
 }
-.hex_7 {
-  background-color: var(--lysgron);
+.hex_gradient_small {
+  background: linear-gradient(0.15turn, #04668c, #6aa64e, #ffa600);
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
-  padding: 3rem;
+}
+.hex_gradient_medium {
+  background: linear-gradient(0.15turn, #04668c, #6aa64e, #ffa600);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  aspect-ratio: 1/1;
+  width: 20%;
+}
+.hex_gradient_large {
+  background: linear-gradient(0.15turn, #04668c, #6aa64e, #ffa600);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  aspect-ratio: 1/1;
+  width: 20%;
 }
 
 .hex_1_place {
