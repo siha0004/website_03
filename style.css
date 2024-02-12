@@ -230,6 +230,13 @@ header nav ul {
   list-style: none;
 }
 
+.flex_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /***********************************  BURGERMENU  ***********************************/
 
 .burger {
@@ -334,9 +341,10 @@ ul {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: bold;
-
+  text-align: center;
   text-transform: uppercase;
   color: var(--sort);
+
   padding: 1rem 1rem 1rem 1rem;
   margin: 0;
 }
