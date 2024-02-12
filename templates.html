@@ -22,24 +22,26 @@
 
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="img/svg/logo_blue.svg" alt="Logo" class="logo"></a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="app.html">App</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="vision.html">Vision</a></li>
-                <li><a href="about.html">Om os</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+        <div class="max flex_header">
+            <div>
+                <a href="index.html"><img src="img/svg/logo_blue.svg" alt="Logo" class="logo"></a>
             </div>
-        </nav>
+            <nav>
+                <ul class="menu">
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                    <li><a href="about.html">Om os</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
+    <main class="max">
         <!-- TEMPLATE 01.1 | HERO VIDEO -->
         <!-- <article class="relativ_frame frame">
             <video autoplay muted loop class="video">
@@ -66,11 +68,11 @@
         </article>
 
         <!-- TEMPLATE 02.1 | 2COL PHOTO + CHECKMARKS -->
-        <article class="grid_1-1">
+        <article class=" grid_1-1 space">
             <div class="order frem">
                 <img src="img/webp/bolde_i_net.webp" alt="Billede af fodbolde" class="hex">
             </div>
-            <div class="frem">
+            <div class="frem space_top">
                 <h2>Heading 2</h2>
                 <div>
                     <div class="flex_row flex_checkmark">
@@ -89,37 +91,37 @@
             </div>
         </article>
 
-        <!-- TEMPLATE 02.2 | 2COL TEXT + PHOTO -->
-        <article class="grid_1-1">
+        <!-- TEMPLATE 02.2 | 2COL PHOTO + TEXT -->
+        <article class="grid_1-1 space">
+            <div>
+                <img src="img/webp/bolde_i_net.webp" alt="Billede af fodbolde" class="hex">
+            </div>
             <div class="flex_col">
                 <h2>Heading 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ut hic nobis quia debitis molestias
                     reiciendis, aperiam, nesciunt unde doloremque cumque ipsam fugit quidem aliquid repellat eligendi?
                     Ea, iste illo.</p>
                 <a href="platform.html" class="knap_2 green">Læs mere</a>
-            </div>
-            <div>
-                <img src="img/webp/app_design.webp" alt="Billede med app">
             </div>
         </article>
-        <!-- TEMPLATE 02.2 | 2COL TEXT + QUOTE -->
-        <article class="grid_1-1">
-            <div class="flex_col">
-                <h2>Heading 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ut hic nobis quia debitis molestias
-                    reiciendis, aperiam, nesciunt unde doloremque cumque ipsam fugit quidem aliquid repellat eligendi?
-                    Ea, iste illo.</p>
-                <a href="platform.html" class="knap_2 green">Læs mere</a>
-            </div>
+        <!-- TEMPLATE 02.2 | 2COL QUOTE + TEXT -->
+        <article class="grid_1-1 space">
             <div>
                 <p class="quote center">"Lorem ipsum, dolor sit amet consectetur amet sit dolor adipisicing elit!"</p>
                 <p class="quote_from center">- Name (info)</p>
+            </div>
+            <div class="flex_col flex_space">
+                <h2>Heading 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ut hic nobis quia debitis molestias
+                    reiciendis, aperiam, nesciunt unde doloremque cumque ipsam fugit quidem aliquid repellat eligendi?
+                    Ea, iste illo.</p>
+                <a href="platform.html" class="knap_2 green">Læs mere</a>
             </div>
         </article>
 
         <!-- TEMPLATE 02.3 | 2COL TEXT + FORM -->
         <article>
-            <img src="img/svg/blaa_top.svg" alt="figurtop" class="top">
+            <!-- <img src="img/svg/blaa_top.svg" alt="figurtop" class="top"> -->
             <div class="blaa">
                 <div class="grid_1-1_top luft">
                     <div class="flex_col">
@@ -129,60 +131,56 @@
                         <p class="light_txt">Kontakt os og vær med på rejsen.</p>
                         <a href="platform.html" class="knap_2">Læs mere</a>
                     </div>
-                    <div>
-                        <!-- FORM -->
-                        <form action="thanks.html" name="index-form">
-                            <div class="form-felt">
-                                <label for="firstname">Fuldt navn</label>
-                                <input id="firstname" name="fname" type="text">
-                            </div>
+                    <form action="thanks.html" name="index-form">
+                        <div class="form-felt">
+                            <label for="firstname">Fuldt navn</label>
+                            <input id="firstname" name="fname" type="text">
+                        </div>
 
-                            <div class="form-felt">
-                                <label for="lastname">Holdnavn</label>
-                                <input id="lastname" name="lname" type="text">
-                            </div>
+                        <div class="form-felt">
+                            <label for="lastname">Holdnavn</label>
+                            <input id="lastname" name="lname" type="text">
+                        </div>
 
-                            <div class="form-felt">
-                                <label for="email">E-mail</label>
-                                <input id="email" name="email" type="email">
-                            </div>
+                        <div class="form-felt">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email">
+                        </div>
 
-                            <div class="form-felt">
-                                <label for="message">
-                                    Besked (valgfri)
-                                    <textarea name="besked" id="message" rows="3" cols="40"></textarea>
-                                </label>
-                            </div>
+                        <div class="form-felt">
+                            <label for="message">
+                                Besked (valgfri)</label>
+                            <textarea name="besked" id="message" rows="3" cols="40"></textarea>
+                        </div>
 
-                            <div class="button_luft">
-                                <button type="submit">Send</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="button_luft">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <img src="img/svg/blaa_bund.svg" alt="figurbund" class="bund">
+            <!-- <img src="img/svg/blaa_bund.svg" alt="figurbund" class="bund"> -->
         </article>
 
 
         <!-- TEMPLATE 03.1 | 3COL TEXT + PHOTO -->
         <article class="grid_2-1">
             <img src="img/webp/gruppe.webp" alt="Billede af Peer Performance Team">
-            <div class="flex_col">
+            <div class="flex_col space">
                 <h2> Heading 2</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, deserunt molestiae voluptate
                     eveniet, eius libero minima omnis maxime veritatis, impedit quasi maiores illo fuga voluptatem
                     natus. Rem temporibus laudantium reprehenderit!</p>
-                <a href="about.html" class="knap_2">Læs mere</a>
+                <a href="about.html" class="knap_2 green">Læs mere</a>
             </div>
         </article>
 
 
         <!-- TEMPLATE 03.2 | 3COL HEX -->
-        <article class="flex_col">
-            <h2 class="center">Heading 2</h2>
+        <article>
+            <h2 class="space center_web">Heading 2</h2>
 
-            <div class="grid_1-1-1">
+            <div class="flex_row space">
                 <img class="hex_bag" src="img/svg/greve_fodbold.svg" alt="dummy">
                 <img class="hex_bag" src="img/svg/greve_fodbold.svg" alt="dummy">
                 <img class="hex_bag" src="img/svg/greve_fodbold.svg" alt="dummy">
@@ -190,35 +188,44 @@
         </article>
 
         <!-- TEMPLATE 03.3 | 3COL HEX W/TEXT -->
-        <article class="flex_col">
-            <h2 class="center">Heading 2</h2>
-            <div class="grid_1-1-1">
-                <div class="flex_col">
+        <article>
+            <h2 class="space center_web">Heading 2</h2>
+            <div class="grid_1-1-1 space space_bottom">
+                <div class="grid_1-4 space_bottom">
                     <div>
                         <img src="img/svg/paere_ikon.svg" alt="Ikon af en lyspære" class="icon">
                     </div>
-                    <h3>Heading 3</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque error, iusto neque dicta at,
-                        cumque nulla odit illum, quibusdam voluptas beatae quos quis? Temporibus minima hic quae odit
-                        vero architecto.</p>
-                </div>
-                <div class="flex_col">
                     <div>
-                        <img src="img/svg/hjerne_ikon.svg" alt="Ikon af en hjerne" class="icon">
+                        <h3>Heading 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque error, iusto neque dicta at,
+                            cumque nulla odit illum, quibusdam voluptas beatae quos quis? Temporibus minima hic quae
+                            odit
+                            vero architecto.</p>
                     </div>
-                    <h3>Heading 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero alias ratione nihil consectetur
-                        facilis officiis cumque voluptate debitis voluptates praesentium voluptas cum rerum quis
-                        aperiam, culpa ea quo sed vero?</p>
                 </div>
-                <div class="flex_col">
+                <div class="grid_1-4 space_bottom">
                     <div>
-                        <img src="img/svg/graf_ikon.svg" alt="graf" class="icon">
+                        <img src="img/svg/paere_ikon.svg" alt="Ikon af en lyspære" class="icon">
                     </div>
-                    <h3>Heading 3</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, esse ullam aliquid debitis hic
-                        quae perspiciatis, numquam officiis aliquam veritatis eligendi id, quod animi. Fuga corrupti
-                        laboriosam aliquid veritatis libero!</p>
+                    <div>
+                        <h3>Heading 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque error, iusto neque dicta at,
+                            cumque nulla odit illum, quibusdam voluptas beatae quos quis? Temporibus minima hic quae
+                            odit
+                            vero architecto.</p>
+                    </div>
+                </div>
+                <div class="grid_1-4 space_bottom">
+                    <div>
+                        <img src="img/svg/paere_ikon.svg" alt="Ikon af en lyspære" class="icon">
+                    </div>
+                    <div>
+                        <h3>Heading 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque error, iusto neque dicta at,
+                            cumque nulla odit illum, quibusdam voluptas beatae quos quis? Temporibus minima hic quae
+                            odit
+                            vero architecto.</p>
+                    </div>
                 </div>
             </div>
 

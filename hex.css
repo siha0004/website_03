@@ -2,13 +2,14 @@
 
 .hex {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  max-height: 430px;
 }
 
 .hex_bag {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   background-color: var(--light_green);
   width: 100%;
-  padding: 5%;
+  padding: 3%;
 }
 
 .hex_baggrund {
@@ -112,4 +113,56 @@
   top: 82%;
   left: -18%;
   width: 65%;
+}
+
+/***********************************  DESKTOP  ***********************************/
+
+@media (min-width: 800px) {
+  .hex_bag {
+    margin: 1rem;
+  }
+
+  .hex_1_place {
+    position: absolute;
+    top: 27%;
+    left: 68%;
+    width: 35%;
+  }
+  .hex_2_place {
+    position: absolute;
+    top: 24%;
+    left: -9%;
+    width: 50%;
+  }
+
+  .hex_3_place {
+    position: absolute;
+    top: 4%;
+    width: 34%;
+    left: 46%;
+  }
+  .hex_4_place {
+    position: absolute;
+    top: 46%;
+    left: -18%;
+    width: 28%;
+  }
+  .hex_5_place {
+    position: absolute;
+    top: -6%;
+    width: 33%;
+    left: 19%;
+  }
+  .hex_6_place {
+    position: absolute;
+    top: 13%;
+    left: 77%;
+    width: 18%;
+  }
+  .hex_7_place {
+    position: absolute;
+    top: 13%;
+    left: 77%;
+    width: 18%;
+  }
 }
