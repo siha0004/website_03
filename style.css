@@ -51,7 +51,7 @@ main {
   margin-top: 2rem;
 }
 .space_bottom {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /***********************************  TEKST  ***********************************/
@@ -96,7 +96,7 @@ p {
   font-size: 0.9rem;
   color: var(--black);
   margin: 0;
-  max-width: 65ch;
+  max-width: 60ch;
 }
 
 .pf {
@@ -137,10 +137,10 @@ p {
   text-align: center;
 }
 
-/***********************************  BILLEDER  ***********************************/
+/***********************************  BILLEDER + VIDEO ***********************************/
 
 img {
-  max-width: 101%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -163,7 +163,9 @@ img {
   margin: 0.25rem;
 }
 
-/***********************************  VIDEO  ***********************************/
+.hero {
+  max-height: 500px;
+}
 
 .relative_frame {
   position: relative;
@@ -395,7 +397,7 @@ form {
   font-size: 0.85rem;
   color: var(--white);
 
-  margin: 2rem 0 0;
+  /* margin: 2rem 0 0; */
 }
 
 label,
@@ -538,6 +540,12 @@ button:hover {
   margin: 2rem auto;
 }
 
+.flex_elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .flex_checkmark {
   align-items: center;
 }
@@ -553,6 +561,44 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
+
+.grid_step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+/* .step_arrow_1 {
+  height: 100px;
+} */
+.step_hex_2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.step_txt_2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.step_arrow_2 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.step_hex_3 {
+  grid-column: 1;
+}
+.step_txt_3 {
+  grid-column: 2;
+  grid-row: 5;
+}
+/* 
+ .step_1 {
+    grid-column: 1;
+  }
+ */
+
 /***********************************  SPECIALS  ***********************************/
 
 .luft {
@@ -669,7 +715,7 @@ button:hover {
   .grid_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
 
     margin: 2rem 15%;
   }
@@ -680,11 +726,50 @@ button:hover {
     gap: 2rem;
     margin: 2rem 15%;
   }
+  .grid_step {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .step_txt_1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .step_arrow_1 {
+    transform: rotate(270deg);
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .step_hex_2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .step_txt_2 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .step_arrow_2 {
+    transform: rotate(270deg);
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .step_hex_3 {
+    grid-column: 5;
+    grid-row: 1;
+  }
+  .step_txt_3 {
+    grid-column: 5;
+    grid-row: 2;
+  }
 
   /************** VIDEO + FOTO **************/
   .overlay {
     position: absolute;
-    top: 65%;
+    bottom: 75%;
     right: 10%;
   }
   .video {
@@ -692,9 +777,9 @@ button:hover {
     margin: 0;
   }
 
-  .image {
+  /* .image {
     border-radius: 5px;
-  }
+  } */
 
   .icon {
     width: 75%;
