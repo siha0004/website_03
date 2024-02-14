@@ -207,7 +207,7 @@ img {
 }
 .blaa {
   background-color: var(--midnight);
-  padding: 2rem 1.5rem;
+  padding: 2rem 0rem;
   margin-bottom: 3rem;
 }
 
@@ -610,9 +610,41 @@ button:hover {
   position: relative;
 }
 
+/***********************************  TABLET  ***********************************/
+
+@media (min-width: 600px) {
+  /************** HEADLINE **************/
+
+  /************** GRID **************/
+
+  .order {
+    order: -1;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    margin: 2rem 10%;
+  }
+  .grid_1-1_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    margin: 2rem 10%;
+  }
+
+  .center_web {
+    text-align: center;
+  }
+}
+
 /***********************************  DESKTOP  ***********************************/
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   /************** HEADER **************/
   header {
     position: sticky;
@@ -666,6 +698,13 @@ button:hover {
   .box {
     padding: 5rem 10rem;
   }
+
+  .grid_1-1 {
+    margin: 2rem 15%;
+  }
+  .grid_1-1_top {
+    margin: 2rem 15%;
+  }
   /************** TEKSTER **************/
   h1 {
     font-size: 3rem;
@@ -686,31 +725,7 @@ button:hover {
     font-size: 1rem;
   }
 
-  .center_web {
-    text-align: center;
-  }
-
   /************** GRID **************/
-
-  .order {
-    order: -1;
-  }
-
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-
-    margin: 2rem 15%;
-  }
-  .grid_1-1_top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-
-    margin: 2rem 15%;
-  }
 
   .grid_2-1 {
     display: grid;
