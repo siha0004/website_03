@@ -3,6 +3,7 @@
 html {
   --yellow: #ffa600;
   --midnight: #022e40;
+  --midnight_2: #1a4252;
   --brand: #04668c;
   --light_blue: #dbeef5;
   --green: #6aa64e;
@@ -75,7 +76,7 @@ h2 {
 
 h3 {
   font-family: "Fugaz One", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: var(--midnight);
   margin: 0;
@@ -89,6 +90,14 @@ h4 {
   text-align: center;
 
   color: var(--midnight);
+}
+
+h5 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--midnight_2);
+  margin: 0;
 }
 
 p {
@@ -558,6 +567,12 @@ button:hover {
   align-items: center;
 }
 
+.grid_flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 2rem;
+}
+
 .grid_1-4 {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -603,11 +618,6 @@ button:hover {
   grid-column: 2;
   grid-row: 5;
 }
-/* 
- .step_1 {
-    grid-column: 1;
-  }
- */
 
 /***********************************  SPECIALS  ***********************************/
 
@@ -752,6 +762,12 @@ button:hover {
   }
 
   /************** GRID **************/
+
+  .grid_flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+  }
 
   .grid_2-1 {
     display: grid;
