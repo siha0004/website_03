@@ -4,6 +4,7 @@ html {
   --yellow: #ffa600;
   --midnight: #022e40;
   --midnight_2: #1a4252;
+  --midnight_3: #305462;
   --brand: #04668c;
   --light_blue: #dbeef5;
   --green: #6aa64e;
@@ -106,6 +107,7 @@ p {
   color: var(--black);
   margin: 0;
   max-width: 60ch;
+  line-height: 1.5;
 }
 
 .pf {
@@ -132,6 +134,15 @@ p {
 
   color: var(--black);
   margin: 1rem 0 0;
+}
+
+.founder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  color: var(--midnight_2);
 }
 
 .light_txt {
@@ -195,6 +206,10 @@ img {
 
 .icon {
   width: 175%;
+}
+
+.contact img {
+  margin: 0;
 }
 
 /***********************************  BACKGROUNDS  ***********************************/
@@ -617,6 +632,25 @@ button:hover {
 .step_txt_3 {
   grid-column: 2;
   grid-row: 5;
+}
+
+.about_headings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.about_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
 /***********************************  SPECIALS  ***********************************/
