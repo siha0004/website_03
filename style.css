@@ -41,9 +41,10 @@ main {
   margin: 0 auto;
 }
 
-/* article {
-  margin-bottom: 4rem;
-} */
+article {
+  z-index: 1;
+  position: relative;
+}
 
 .space {
   margin: 2rem;
@@ -659,11 +660,6 @@ button:hover {
   padding: 1rem 1.5rem;
 }
 
-.frem {
-  z-index: 1;
-  position: relative;
-}
-
 .badge {
   z-index: 1;
   position: absolute;
@@ -680,7 +676,7 @@ button:hover {
   /************** GRID **************/
 
   .order {
-    order: -1;
+    order: 2;
   }
 
   .grid_1-1 {
