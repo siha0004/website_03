@@ -197,8 +197,8 @@ img {
 
 .overlay {
   position: absolute;
-  top: 45%;
-  right: 10%;
+  top: 55%;
+  right: 5%;
 }
 
 .video {
@@ -333,6 +333,8 @@ header nav ul {
 footer {
   background-color: var(--white);
   padding: 2rem;
+  position: relative;
+  z-index: 5;
 
   display: flex;
   flex-direction: column;
@@ -679,6 +681,10 @@ button:hover {
 /***********************************  TABLET  ***********************************/
 
 @media (min-width: 600px) {
+  main {
+    gap: 2rem;
+  }
+
   /************** TEXT **************/
   h1 {
     font-size: 2.75rem;
