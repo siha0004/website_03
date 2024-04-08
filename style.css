@@ -237,7 +237,8 @@ img {
 .blaa {
   background-color: var(--midnight);
   padding: 2rem 0rem;
-  margin-bottom: 3rem;
+  z-index: 2;
+  /* margin-bottom: 3rem; */
 }
 
 /***********************************  HEADER  ***********************************/
