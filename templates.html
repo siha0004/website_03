@@ -123,7 +123,7 @@
         <article>
             <!-- <img src="img/svg/blaa_top.svg" alt="figurtop" class="top"> -->
             <div class="blaa">
-                <div class="grid_1-1_top luft">
+                <div class="layout_form grid_1-1_top luft">
                     <div class="flex_col">
                         <h2 class="light_txt">Heading 2</h2>
                         <p class="light_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis
@@ -133,24 +133,29 @@
                     </div>
                     <form action="succes.html" name="index-form">
                         <div class="form-felt">
-                            <label for="firstname">Fuldt navn</label>
-                            <input id="firstname" name="fname" type="text">
+                            <label for="firstname">Fuldt navn <span class="required">*</span></label>
+                            <input id="firstname" name="fullname" type="text" autocomplete="name" required>
                         </div>
 
                         <div class="form-felt">
-                            <label for="lastname">Holdnavn</label>
-                            <input id="lastname" name="lname" type="text">
+                            <label for="email">E-mail <span class="required">*</span></label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
                         </div>
 
                         <div class="form-felt">
-                            <label for="email">E-mail</label>
-                            <input id="email" name="email" type="email">
+                            <label for="subject">Emne <span class="required">*</span></label>
+                            <!-- <input id="subject" name="subject" type="text" autocomplete="off"> -->
+                            <select name="subject" id="subject">
+                                <option value="opt1">Mulighed 1</option>
+                                <option value="opt2">Mulighed 2</option>
+                                <option value="other">Andet</option>
+                            </select>
                         </div>
 
                         <div class="form-felt">
                             <label for="message">
-                                Besked (valgfri)</label>
-                            <textarea name="besked" id="message" rows="3" cols="40"></textarea>
+                                Besked</label>
+                            <textarea name="besked" id="message" rows="3" cols="40" autocomplete="off"></textarea>
                         </div>
 
                         <div class="button_luft">

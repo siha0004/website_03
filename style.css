@@ -157,6 +157,9 @@ p {
 .center {
   text-align: center;
 }
+.required {
+  color: red;
+}
 
 /***********************************  BILLEDER + VIDEO ***********************************/
 
@@ -650,6 +653,12 @@ button:hover {
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+}
+
+.layout_form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 /***********************************  SPECIALS  ***********************************/
