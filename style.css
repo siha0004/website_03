@@ -199,10 +199,7 @@ img {
 }
 
 .video {
-  aspect-ratio: 16/9;
   width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
 }
 
 .icon {
@@ -672,7 +669,10 @@ button:hover {
 /***********************************  TABLET  ***********************************/
 
 @media (min-width: 600px) {
-  /************** HEADLINE **************/
+  /************** TEXT **************/
+  h1 {
+    font-size: 2.75rem;
+  }
 
   /************** GRID **************/
 
@@ -870,12 +870,12 @@ button:hover {
   /************** VIDEO + FOTO **************/
   .overlay {
     position: absolute;
-    bottom: 75%;
+    top: 50%;
     right: 10%;
   }
   .video {
-    border-radius: 5px;
     margin: 0;
+    height: 90vh;
   }
 
   /* .image {
