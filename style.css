@@ -371,6 +371,8 @@ a {
 }
 
 .link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
   text-decoration: underline;
   color: var(--brand);
 }
@@ -868,6 +870,10 @@ button:hover {
   }
 
   p {
+    font-size: 1rem;
+  }
+
+  .link {
     font-size: 1rem;
   }
 
