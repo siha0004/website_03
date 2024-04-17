@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
-    <title>Forside</title>
+    <title>Om os</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hex.css">
@@ -33,7 +33,7 @@
             <nav>
                 <ul class="menu">
                     <li><a href="app.html">App</a></li>
-                    <li><a href="community.html">Fællesskab</a></li>
+                    <!-- <li><a href="community.html">Fællesskab</a></li> -->
                     <li><a href="vision.html">Vision</a></li>
                     <li><a href="about.html">Om os</a></li>
                 </ul>
@@ -49,7 +49,7 @@
         <div class="blaa">
             <article class="grid_2-1 space">
                 <img src="img/webp/gruppe.webp" alt="Billede af Peer Performance Team">
-                <div class="flex_col">
+                <div class="flex_col space_top">
                     <h2 class="light_txt">Hvem er vi?</h2>
                     <p class="light_txt">Peer Performance blev startet i midten af 2022 af Anders, Jonathan og Nermin -
                         under deres bacheloruddannelse i Exercise
@@ -73,7 +73,7 @@
                         <img src="img/webp/Jonthan1.webp" alt="Billede af teammedlem" class="hex">
                     </div>
                     <div class="about_headings">
-                        <p class="founder">founder</p>
+                        <p class="founder">co-founder</p>
                         <h3>Jonathan Lind Nielsen</h3>
                         <h5>Chief Executive Officer</h5>
                     </div>
@@ -103,7 +103,7 @@
                         <img src="img/webp/Nermin1.webp" alt="Billede af teammedlem" class="hex">
                     </div>
                     <div class="about_headings">
-                        <p class="founder">founder</p>
+                        <p class="founder">co-founder</p>
                         <h3>Nermin Dulic</h3>
                         <h5>Chief Marketing Officer</h5>
                     </div>
@@ -133,7 +133,7 @@
                         <img src="img/webp/bolde_i_net.webp" alt="Billede af teammedlem" class="hex">
                     </div>
                     <div class="about_headings">
-                        <p class="founder">founder</p>
+                        <p class="founder">co-founder</p>
                         <h3>Nadeem Zafar</h3>
                         <h5>Chief Technical Advisor</h5>
                     </div>
@@ -152,7 +152,7 @@
                         <img src="img/webp/bolde_i_net.webp" alt="Billede af teammedlem" class="hex">
                     </div>
                     <div class="about_headings">
-                        <p class="founder">founder</p>
+                        <p class="founder">co-founder</p>
                         <h3>Qu Kops Le</h3>
                         <h5>Lead Developer</h5>
                     </div>
@@ -170,7 +170,7 @@
                         <img src="img/webp/bolde_i_net.webp" alt="Billede af teammedlem" class="hex">
                     </div>
                     <div class="about_headings">
-                        <p class="founder">founder</p>
+                        <p class="founder">co-founder</p>
                         <h3>Mathias Tvilum Clausen</h3>
                         <h5>Junior Developer</h5>
                     </div>
@@ -187,7 +187,7 @@
                         <img src="img/webp/bolde_i_net.webp" alt="Billede af teammedlem" class="hex">
                     </div>
                     <div class="about_headings">
-                        <p class="founder">founder</p>
+                        <p class="founder">co-founder</p>
                         <h3>Sif Melkane Hansen</h3>
                         <h5>Head of Communication & Design</h5>
                     </div>
@@ -200,7 +200,55 @@
                 </div>
             </div>
         </article>
+        <article>
+            <!-- <img src="img/svg/blaa_top.svg" alt="figurtop" class="top"> -->
+            <div class="blaa">
+                <div class="layout_form grid_1-1_top luft">
+                    <div class="flex_col">
+                        <h2 class="light_txt">Har du et spørgsmål?</h2>
+                        <p class="light_txt">Vi arbejder hårdt på at forbedre vilkårene for breddesport. Tror du også på
+                            potentialet? Du kan hjælpe ved at teste
+                            vores prototype sammen med dit hold.</p>
+                        <p class="light_txt">Kontakt os og vær med på rejsen.</p>
 
+                    </div>
+                    <form action="succes.html" name="index-form">
+                        <div class="form-felt">
+                            <label for="firstname">Fuldt navn <span class="required">*</span></label>
+                            <input id="firstname" name="fullname" type="text" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-felt">
+                            <label for="email">E-mail <span class="required">*</span></label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+
+                        <!-- 
+                        <div class="form-felt">
+                            <label for="subject">Emne <span class="required">*</span></label>
+                         <input id="subject" name="subject" type="text" autocomplete="off"> 
+                            <select name="subject" id="subject">
+                                <option value="opt1">Tilmelding til prototype</option>
+                                <option value="opt2">Spørgsmål om virksomheden</option>
+                                <option value="other">Andet</option>
+                            </select>
+                        </div>
+                        -->
+
+                        <div class="form-felt">
+                            <label for="message">
+                                Besked</label>
+                            <textarea name="besked" id="message" rows="3" cols="40" autocomplete="off"></textarea>
+                        </div>
+
+                        <div class="button_luft">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <img src="img/svg/blaa_bund.svg" alt="figurbund" class="bund"> -->
+        </article>
     </main>
     <footer>
         <div>

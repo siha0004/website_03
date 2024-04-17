@@ -521,18 +521,17 @@ textarea {
 /***********************************  KNAPPER  ***********************************/
 
 button {
-  background-color: var(--yellow);
-  border-style: solid;
+  background-color: transparent;
   border-color: var(--yellow);
+  border-style: solid;
   border-radius: 5px;
-  padding: 0.5rem;
-
+  color: var(--yellow);
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
-  color: var(--white);
   text-transform: uppercase;
   width: fit-content;
+  padding: 0.5rem;
 }
 
 button:visited {
@@ -540,10 +539,10 @@ button:visited {
 }
 
 button:hover {
-  border-style: solid;
+  background-color: var(--yellow);
   border-color: var(--yellow);
-  background-color: transparent;
-  color: var(--yellow);
+  border-style: solid;
+  color: var(--midnight);
 }
 
 .button_luft {
@@ -612,6 +611,18 @@ button:hover {
   background-color: var(--green);
   color: var(--white);
 }
+.yellow {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.yellow:visited {
+  color: var(--yellow);
+}
+.yellow:hover {
+  background-color: var(--yellow);
+  color: var(--midnight);
+}
 
 /***********************************  FLEX + GRID  ***********************************/
 
@@ -650,6 +661,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 1rem;
+  align-self: start;
 }
 
 .grid_1-1-1_mobil {
@@ -834,6 +846,10 @@ button:hover {
     margin: 2rem 15%;
   }
 
+  .space_top {
+    margin-top: 0rem;
+  }
+
   .frame {
     padding: 2rem 2rem;
     border-radius: 5px;
@@ -859,7 +875,7 @@ button:hover {
     margin: 5rem 0;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   h3 {
     font-size: 1.25rem;
