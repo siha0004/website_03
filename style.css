@@ -63,6 +63,7 @@ article {
 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
+  font-weight: 600;
   font-style: italic;
 
   color: var(--midnight);
@@ -72,6 +73,7 @@ h1 {
 h2 {
   font-family: "Fugaz One", sans-serif;
   font-size: 1.45rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--midnight);
   margin: 0;
@@ -80,6 +82,7 @@ h2 {
 h3 {
   font-family: "Fugaz One", sans-serif;
   font-size: 1.25rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--midnight);
   margin: 0;
@@ -88,6 +91,7 @@ h3 {
 h4 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
+  font-weight: 600;
   font-style: italic;
 
   text-align: center;
@@ -212,6 +216,22 @@ img {
 
 .contact img {
   margin: 0;
+}
+
+/***********************************  HERO  ***********************************/
+
+.hero_1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(184, 209, 220, 0.2), rgba(2, 46, 64, 0.9)), url(img/webp/gruppe_med_crop.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: flex-end;
+  padding: 0rem 2rem;
+}
+
+.hero_txt_1 {
+  color: var(--white);
 }
 
 /***********************************  BACKGROUNDS  ***********************************/
@@ -799,6 +819,16 @@ button:hover {
   .overlay-close {
     width: 50%;
   }
+
+  /* HERO */
+  .hero_1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(2, 46, 64, 0.3), rgba(2, 46, 64, 0.9)), url(img/webp/gruppe_med_crop.webp);
+    padding: 1rem 5rem;
+  }
+
+  .hero_txt_1 {
+    font-size: 2rem;
+  }
 }
 
 /***********************************  DESKTOP  ***********************************/
@@ -982,26 +1012,14 @@ button:hover {
     /* margin: 0 auto 3rem; */
   }
 
-  /************** FOTO HOVER **************/
-  .person .image-container {
-    position: relative;
-    width: 100%;
+  /* HERO */
+  .hero_1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(2, 46, 64, 0.5), rgba(2, 46, 64, 0.9)), url(img/webp/gruppe_med_crop.webp);
+    padding: 5rem 1rem;
   }
 
-  .person .image-container .hover-img {
-    position: absolute;
-    top: -32px;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .person .image-container:hover .hover-img {
-    opacity: 1;
-  }
-
-  .overlay-close {
-    width: 35%;
-    padding: 2rem 4rem;
+  .hero_txt_1 {
+    font-size: 3rem;
+    font-weight: 700;
   }
 }
