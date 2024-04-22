@@ -995,7 +995,7 @@ button:hover {
   /************** VIDEO + FOTO **************/
   .heading {
     position: absolute;
-    top: 50%;
+    top: 100px;
     right: 10%;
   }
   .video {
