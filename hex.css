@@ -7,8 +7,9 @@
 
 .hex_bag {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  background-color: var(--brand);
+  background-color: var(--light_blue);
   width: 100%;
+  /* height: 100%; */
   padding: 3%;
 }
 
@@ -101,8 +102,8 @@
   }
 
   .hex_app_1 {
-    top: 560px;
-    left: 20%;
+    top: 620px;
+    left: 50%;
     width: 21%;
   }
   .hex_app_2 {
@@ -111,14 +112,14 @@
     width: 20%;
   }
   .hex_vision_1 {
-    top: 910px;
-    left: 9%;
-    width: 20%;
+    top: 915px;
+    left: 76%;
+    width: 30%;
   }
 
   .hex_vision_2 {
-    top: 680px;
-    left: 74%;
+    top: 580px;
+    left: 4%;
     width: 35%;
   }
 
@@ -131,20 +132,20 @@
 
 @media (min-width: 1000px) {
   .hex_index_1 {
-    top: 85%;
+    top: 840px;
     left: 68%;
     width: 20%;
   }
   .hex_index_2 {
-    top: 140%;
+    top: 1080px;
     left: 2%;
     width: 28%;
   }
 
   .hex_app_1 {
-    top: 106%;
-    left: 20%;
-    width: 21%;
+    top: 1250px;
+    left: 49%;
+    width: 18%;
   }
   .hex_app_2 {
     top: 316%;
@@ -152,14 +153,14 @@
     width: 20%;
   }
   .hex_vision_1 {
-    top: 70%;
-    left: 9%;
+    top: 1580px;
+    left: 69%;
     width: 20%;
   }
 
   .hex_vision_2 {
-    top: 71%;
-    left: 74%;
+    top: 920px;
+    left: 4%;
     width: 35%;
   }
 }

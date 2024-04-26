@@ -210,12 +210,27 @@ img {
   width: 100%;
 }
 
+.video_mob {
+  display: block;
+}
+.video_web {
+  display: none;
+}
+
 .icon {
   width: 175%;
 }
 
 .contact img {
   margin: 0;
+}
+
+.sundby {
+  margin-top: 5%;
+}
+.forza {
+  margin-top: 5%;
+  padding: 5%;
 }
 
 /***********************************  HERO  ***********************************/
@@ -1000,7 +1015,12 @@ button:hover {
   }
   .video {
     margin: 0;
-    height: 90vh;
+  }
+  .video_mob {
+    display: none;
+  }
+  .video_web {
+    display: block;
   }
 
   /* .image {
